@@ -3,10 +3,12 @@ const closebutton = document.getElementById("close");
 const form = document.getElementById("form");
 
 button.addEventListener("click", function(){
-  form.style.display = "block"
+  form.style.display = "block";
+  button.style.display = "none";
 })
 closebutton.addEventListener("click", function(){
-  form.style.display = "none"
+  form.style.display = "none";
+  button.style.display = "block";
 })
 
 function displayAlert(event) {

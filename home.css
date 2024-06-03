@@ -1,0 +1,57 @@
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ padding-right: 20px;
+}
+section p {
+  line-height: 30px;
+  font-size: 25px;
+  transform: translateX(25px);
+}
+.productimg:hover {
+ transform: scale(1.1);
+}
+.BUY-BUTTON {
+margin-top: 10px;
+width: 80px;
+height: 40px;
+background-color: aqua;
+color: green;
+border: none;
+transition: opacity 0.31s;
+font-size: 15px;
+}
+.BUY-BUTTON:hover {
+  opacity: 50%;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.BUY-BUTTON:active {
+  opacity: 20%;
+}
+.box {
+  height: 200px;
+  width: 1000px;
+  border: solid;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  text-align: center;
+  box-shadow: 5px 5px 20px gray;
+  border-color: blue;
+  border-radius: 20px;
+  border-width: 4px;
+  margin-top: 50px;
+}
+.box:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 30px gray;
+}
+h2 {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.box p {
+  font-weight: 510;
+}
+

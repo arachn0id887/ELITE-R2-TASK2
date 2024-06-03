@@ -1,0 +1,100 @@
+main {
+  position: relative;
+}
+h1 {
+  text-decoration: underline;
+  font-weight: 900;
+}
+.bgimg {
+  width: 100%;
+  height: 555px;
+  margin-top: -25px;
+  z-index: 5;
+  position: absolute;
+}
+.contactbutton {
+  position: absolute;
+  z-index: 9;
+  height: 60px;
+  width: 200px;
+  margin-left: 80px;
+  cursor: pointer;
+  font-size: 1.01rem;
+  border-radius: 10px;
+  border: none;
+  background: rgb(111, 183, 23);
+  color: white;
+}
+.contactbutton:hover {
+  opacity: 80%;
+  transform: scale(1.03);
+}
+.contactbutton:active {
+  opacity: 60%;
+}
+form {
+  height: 520px;
+  width: 600px;
+  border: solid;
+  z-index: 9;
+  position: absolute;
+  background-color: white;
+  text-align: center;
+  left: 27.5%;
+  display: none;
+}
+.close {
+  transform: translate(10px, 10px) scale(1.5);
+  float: left;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+.form-heading {
+  font-size: 40px;
+}
+form label {
+  font-size: 22px;
+}
+form input {
+  margin-bottom: 30px;
+}
+.contact-methods {
+width: 600px;
+}
+.contact-methods label {
+  font-size: 18px;
+}
+.namebox, .emailbox {
+  width: 300px;
+}
+.msgbox {
+  height: 80px;
+  width: 300px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.msgbox::placeholder {
+  position: absolute;
+  top: 0;
+}
+.msglabel {
+  font-size: 20px;
+}
+.reset, .submit {
+  height: 42px;
+  width: 150px;
+  cursor: pointer;
+  background-color: chocolate;
+  border: none;
+  border-radius: 12px;
+  margin-right: 20px;
+  font-size: 1.2em;
+ font-weight: 600;
+ transition: background-color 0.7s;
+ transform: scale(1.1);
+}
+.reset:hover, .submit:hover {
+  background-color: rgb(192, 210, 30);
+}
+

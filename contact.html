@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HyperSwift V1 | CONTACT</title>
+    <link rel="shortcut icon" href="HS LOGO.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navdiv">
+          <p class="heading">HyperSwift V1</p>
+          <img src="HS LOGO.png" alt="HS" class="hslogo" />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="waitlist.html">Waitlist</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <img src="CONTACT-BG.jpg" alt="contact-bg" class="bgimg" />
+      <button class="contactbutton" id="contactbutton">
+        CLICK TO CONTACT US
+      </button>
+      <form id="form" onsubmit="displayAlert(event)">
+        <button class="close" id="close" type="button">X</button>
+        <h1 class="form-heading">CONTACT FORM</h1>
+        <label for="namebox">Enter your name:</label>
+        <input
+          type="text"
+          placeholder="XYZ"
+          class="namebox"
+          id="namebox"
+          required
+        />
+        <br />
+        <label for="emailbox">Email:</label>
+        <input
+          type="email"
+          placeholder="XYZ@abc.com"
+          class="emailbox"
+          id="emailbox"
+          required
+          pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z0-9]{1,}"
+        />
+        <br />
+        <p class="msglabel">Type your message:</p>
+        <textarea
+          name="msgbox"
+          placeholder="Message..."
+          class="msgbox"
+          id="msgbox"
+          required
+        ></textarea>
+
+        <br />
+        <div class="contact-methods">
+          <label>Contact through:</label>
+          <input type="radio" class="GMAIL" name="method" id="GMAIL" />
+          <label for="GMAIL">Gmail</label>
+          <input type="radio" class="HOTMAIL" name="method" id="HOTMAIL" />
+          <label for="HOTMAIL">Hotmail</label>
+          <input type="radio" class="SMS" name="method" id="SMS" />
+          <label for="SMS">SMS</label>
+          <input type="radio" class="WHATSAPP" name="method" id="WHATSAPP" />
+          <label for="WHATSAPP">WhatsApp</label>
+        </div>
+        <input type="reset" class="reset" />
+        <button class="submit" type="submit">Send</button>
+      </form>
+    </main>
+    <footer>
+      <div class="footdiv">
+        <p class="copyright">&#169; 2024 HyperSwift V1</p>
+        <p class="socials">
+          <span class="span1"
+            ><a href="https://www.instagram.com/">Instagram</a></span
+          >
+          | <span class="span2"><a href="https://x.com/">Twitter</a></span
+          >|
+          <span class="span3"> <a href="https://discord.com/">Discord</a></span>
+        </p>
+        <button class="backtotop"><a href="#">↑</a></button>
+      </div>
+    </footer>
+    <script src="contact.js"></script>
+  </body>
+</html>

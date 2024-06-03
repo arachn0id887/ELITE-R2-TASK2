@@ -1,0 +1,108 @@
+h1 {
+  margin-left: 10px;
+  text-decoration: underline;
+  text-align: center;
+}
+main {
+  position: relative;
+}
+.bgimg {
+  width: 100%;
+  height: 555px;
+  margin-top: -25px; 
+  z-index: 5;
+  position: absolute;
+}
+.contactbutton {
+  position: absolute;
+  z-index: 9;
+  height: 60px;
+  width: 200px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 1.01rem;
+  border-radius: 10px;
+  border: none;
+  background: rgb(111, 183, 23);
+  color: white;
+}
+.contactbutton:hover {
+  opacity: 80%;
+  transform: scale(1.03);
+}
+.contactbutton:active {
+  opacity: 60%;
+}
+form {
+  width: 550px;
+  height: 300px;
+  border: solid;
+  border-width: 5px;
+  border-color: royalblue;
+  align-self: center;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px 2px gray;
+  padding: 10px;
+  z-index: 9;
+  position: absolute;
+  margin-left: 30%;
+  background-color: white;
+  margin-top: 50px;
+  display: none;
+}
+.close {
+  transform: translate(10px, 10px) scale(1.5);
+  float: left;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+.namebox {
+margin-left: 20px;
+width: 200px;
+height: 20px;
+}
+.emailbox {
+margin-top: 20px;
+margin-left: 20px;
+margin-bottom: 20px;
+}
+.updatelabel {
+font-size: 1.07em;
+}
+.updates {
+margin-left: 20px;
+}
+label {
+  margin-left: 20px;
+  font-size: 20px;
+}
+.reset {
+  background-color: blue;
+  color: white;
+}
+.submit {
+  background-color: gold;
+}
+.reset, .submit {
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  transition: opacity 0.2s;
+}
+.reset:hover, .submit:hover {
+  opacity: 60%;
+}
+.reset:active, .submit:active {
+  opacity: 40%;
+}
+
+.reset {
+margin-left: 75px;
+}

@@ -1,0 +1,85 @@
+html {
+  height: 700px;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background-color: orange;
+  height: 125px;
+  margin-top: -50px;
+  margin-bottom: 25px;
+}
+.heading {
+  font-size: 50px;
+  margin-left: 50px;
+  font-weight: 700;
+}
+.hslogo {
+  height: 55px;
+  width: 60px;
+  margin-top: 10px;
+  margin-right: 300px;
+}
+li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 50px;
+}
+li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  font-weight: 400;
+}
+li a:hover {
+  color: blue;
+}
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer {
+ height: 70px;
+ background-color: yellow;
+ margin-top: auto;
+}
+.footdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.footdiv p {
+  font-size: 20px;
+}
+.socials {
+  cursor: pointer;
+}
+.socials span {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.socials a {
+  text-decoration: none;
+}
+.socials a:hover {
+  text-decoration: underline;
+}
+.backtotop {
+  width: 50px;
+  height: 45px;
+ margin-top: 10px;
+  border-radius: 10px;
+  border: solid;
+  border-width: 2px;
+  background-color: white;
+  font-size: 30px;
+}

@@ -3,10 +3,12 @@ const closebutton = document.getElementById("close");
 const form = document.getElementById("form");
 
 button.addEventListener("click", function(){
-  form.style.display = "block"
+  form.style.display = "block";
+  button.style.display = "none";
 })
 closebutton.addEventListener("click", function(){
-  form.style.display = "none"
+  form.style.display = "none";
+  button.style.display = "block";
 })
 
 function displayAlert(event) {
@@ -25,19 +27,15 @@ function displayAlert(event) {
     data += "Notifications: Yes"
     window.alert(data)
     form.style.display = "none";
-    name = "";
-    email = "";
-    yes.checked = false;
-    no.checked = false;
+    button.style.display = "none";
+    document.getElementById("thanks").style.display = "block";
   }
   else if(no.checked){
     data += "Notifications: No"
     window.alert(data)
     form.style.display = "none";
-    name = "";
-    email = "";
-    yes.checked = false;
-    no.checked = false;
+    button.style.display = "none";
+    document.getElementById("thanks").style.display = "block";
   }
   else if(!yes.checked && !no.checked){
     window.alert("Please select whether you would like to receive notifications or not.")
@@ -45,11 +43,8 @@ function displayAlert(event) {
   else{
     window.alert(data)
     form.style.display = "none";
-    name = "";
-    email = "";
-    yes.checked = false;
-    no.checked = false;
+    button.style.display = "none";
+    document.getElementById("thanks").style.display = "block";
   }
   event.preventDefault();
 }
-
